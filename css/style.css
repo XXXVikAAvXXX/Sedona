@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+  text-transform: uppercase;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -13,6 +14,11 @@
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 21px;
 }
 
 .main-nav {
@@ -71,4 +77,119 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.promo {
+  margin-top: 55px;
+}
+.promo__title {
+  width: 484px;
+  text-align: center;
+  margin: 0 auto;
+}
+.promo__text {
+  margin-top: 35px;
+  text-align: center;
+  color: #333333;
+}
+
+.city {
+  text-align: center;
+  margin-top: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.city__descr {
+  color: #ffffff;
+  padding: 47px 52px 56px 53px;
+  width: 400px;
+  min-height: 256px;
+  background: #81B3D2;
+}
+.city__number {
+  margin-top: 15px;
+  display: block;
+  color: #ffffff;
+}
+.city__text {
+  margin-top: 30px;
+}
+
+.recommendations {
+  text-align: center;
+  margin-top: 63px;
+  margin-bottom: 80px;
+}
+.recommendations__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.recommendations__item {
+  width: 300px;
+}
+.recommendations__icon {
+  display: block;
+  margin: 0 auto;
+}
+.recommendations__descr {
+  margin-top: 25px;
+}
+.recommendations__title {
+  margin-bottom: 25px;
+}
+.recommendations__text {
+  line-height: 26px;
+}
+
+.bridge {
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bridge__descr {
+  padding: 47px 52px 56px 53px;
+  width: 400px;
+  min-height: 256px;
+  background: #81B3D2;
+}
+.bridge__number {
+  margin-top: 15px;
+  display: block;
+}
+.bridge__text {
+  margin-top: 30px;
+}
+
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.advantages__item {
+  background: #EEEEEE;
+  text-align: center;
+  width: 400px;
+  padding: 42px 54px 61px 54px;
+}
+.advantages__number {
+  margin-top: 15px;
+  display: block;
+}
+.advantages__text {
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */
