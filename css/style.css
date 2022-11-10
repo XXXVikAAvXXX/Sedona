@@ -13,4 +13,44 @@
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.main-nav {
+  position: relative;
+  padding: 16px 0 14px 0;
+}
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main-nav__item:nth-child(2) {
+  padding-right: 300px;
+}
+.main-nav__link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+.main-nav__link:hover {
+  color: #81B3D2;
+}
+.main-nav__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
