@@ -53,4 +53,22 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 1;
+}
+
+.welcome {
+  position: relative;
+  min-height: 630px;
+  background-image: url(../img/photos-desktop/intro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome__title {
+  position: absolute;
+  display: block;
+  top: 78px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
