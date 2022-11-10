@@ -192,4 +192,47 @@
 }
 .advantages__text {
   margin-top: 30px;
+}
+
+.hotels {
+  text-align: center;
+  margin-top: 57px;
+}
+.hotels__title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.hotels__text {
+  margin: 0 auto;
+  width: 435px;
+  line-height: 24px;
+  margin-bottom: 37px;
+}
+.hotels__btn {
+  margin-bottom: 58px;
+}
+
+.map {
+  position: relative;
+}
+.map__mark {
+  position: absolute;
+  left: 586px;
+  top: 162px;
+}
+
+.btn {
+  padding: 14px 121px 17px 121px;
+  background: #81B3D2;
+  font-weight: 700;
+  font-size: 21px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+.btn:hover {
+  background: #669EC0;
+}
+.btn:active {
+  background: #5496BD;
+  color: rgba(255, 255, 255, 0.3);
 }/*# sourceMappingURL=style.css.map */
