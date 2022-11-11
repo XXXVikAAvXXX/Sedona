@@ -1,0 +1,45 @@
+.footer
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 36px 120px
+    &__hashtag
+        color: #000000
+        font-weight: 700
+        font-size: 21px
+
+.social__list
+    display: flex
+    .social__link
+        width: 46px
+        height: 48px
+        background: #81B3D2
+        display: flex
+        justify-content: center
+        align-items: center
+    .social__icon
+        fill: #ffffff
+    .social__link:hover
+        background: #669EC0
+        &:active
+            background: #5496BD
+        &:active .social__icon
+            fill-opacity: 0.3
+    .social__item
+        margin-right: 6px
+        &:last-child
+            margin-right: 0
+
+.copyright
+    &__link
+        display: flex
+        align-items: center
+        &:hover .htmlacademy__icon
+            fill: #81B3D2
+        &:active .htmlacademy__icon
+            fill: rgb(0, 0, 0, 0.3)
+    &__text
+        margin-right: 13px
+    
+
