@@ -21,6 +21,12 @@
   font-size: 21px;
 }
 
+header {
+  background-color: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+
 .main-nav {
   position: relative;
   padding: 16px 0 14px 0;
@@ -77,6 +83,13 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+.welcome__catalog {
+  margin-top: -274px;
+}
+
+.catalog__title {
+  margin-top: 318px;
 }
 
 .promo {
