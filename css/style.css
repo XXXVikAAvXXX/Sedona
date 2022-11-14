@@ -615,4 +615,71 @@ header {
   background: #FFFFFF;
   outline: none;
   border: 4px solid #E5E5E5;
+}
+
+.photo {
+  margin-top: 96px;
+}
+.photo__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+.photo__descr {
+  text-align: center;
+  width: 440px;
+  margin: 0 auto;
+  line-height: 26px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.photo__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.photo__item {
+  margin-bottom: -5px;
+  position: relative;
+}
+.photo__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 22px 21px 15px 21px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+}
+.photo__name {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.photo__author {
+  text-transform: none;
+}
+.photo__likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn__like {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 9px;
 }/*# sourceMappingURL=style.css.map */
