@@ -682,4 +682,26 @@ header {
   border: none;
   cursor: pointer;
   margin-right: 9px;
+}
+
+.video {
+  margin-top: 62px;
+  margin-bottom: 85px;
+}
+.video__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+.video__descr {
+  text-align: center;
+  width: 445px;
+  margin: 0 auto;
+  line-height: 26px;
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
+.video__item {
+  display: block;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
