@@ -21,6 +21,10 @@
   font-size: 21px;
 }
 
+.img {
+  width: 100%;
+}
+
 header {
   background-color: #ffffff;
   z-index: 1;
@@ -704,4 +708,29 @@ header {
 .video__item {
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .main-nav {
+    padding: 16px 11px 14px 35px;
+  }
+  .main-nav__item:nth-child(2) {
+    padding-right: 180px;
+  }
+  .city__descr {
+    padding: 40px 32px 43px 42px;
+    width: 256px;
+  }
+  .bridge__descr {
+    padding: 40px 36px 40px 36px;
+    width: 256px;
+    height: 256px;
+  }
+  .map__mark {
+    left: 370px;
+    top: 164px;
+  }
 }/*# sourceMappingURL=style.css.map */
