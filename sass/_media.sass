@@ -1,18 +1,404 @@
+@media ( max-width: 1199px)
+    .map
+        overflow: hidden
+        width: 100%
+    .city__img,
+    .bridge__img
+        width: 750px
+        height: 256px
+    .city__text,
+    .bridge__text
+        margin-top: 20px
+    .city__descr,
+    .bridge__descr
+        padding: 45px 20px 30px 20px
+    .bridge__descr
+    .fio
+        &__name-1
+            width: 280px
+        &__name-2,
+        &__name-3
+            width: 243px
+    .impression__header
+        left: -60px
+        position: relative
+    .form
+        &__headline::before
+            width: 200px
+        &__headline::after
+            width: 200px
+    .contacts
+        &__input
+            width: 270px
+        &__email
+            margin-left: 20px
+    .feedback
+        margin-top: 64px
+        
+
+@media ( max-width: 991px)
+    .recommendations__text
+        width: 185px
+        margin: 0 auto
+    .city__img,
+    .bridge__img
+        width: 512px
+        height: 256px
+    .title
+        font-size: 20px
+    .city__text
+    .bridge__text
+        margin-top: 15px
+    .city__descr,
+    .bridge__descr
+        width: 100%
+    .form
+        padding: 0 60px
+        &__headline::before
+            width: 150px
+        &__headline::after
+            width: 150px
+    .input__wrapper
+        width: 100%
+    .fio
+        &__name-1
+            width: 216px
+        &__name-2,
+        &__name-3
+            width: 178px
+    .attractions
+        &__wrapper
+            margin: 0 auto
+            width: 480px
+            display: flex
+            flex-wrap: wrap
+        &__block
+            width: 150px
+            margin-bottom: 80px
+            margin-right: 30px
+            &:nth-child(3)
+                margin-bottom: 0
+            &:nth-child(4)
+                margin-bottom: 0
+    .contacts
+        &__input
+            width: 100%
+            padding-right: 5px
+            font-size: 17px
+    .feedback__label
+        right: 70px
+            
+
 @media ( max-width: 768px)
-    .container
-        width: 768px
-    
+    .promo
+        margin-top: 43px
     .main-nav
+        justify-content: space-between
         padding: 16px 11px 14px 35px
         &__item:nth-child(2)
-            padding-right: 180px
-    .city__descr
-        padding: 40px 32px 43px 42px
-        width: 256px
+            padding-right: 140px
+        &__link
+            font-size: 13px
+    .city__descr,
     .bridge__descr
-        padding: 40px 36px 40px 36px
-        width: 256px
-        height: 256px
+        padding: 40px 32px 43px 42px
+        width: 100%
+    .city__img,
+    .bridge__img
+        width: 320px
     .map__mark
         left: 370px
         top: 164px
+    .advantages__item
+        padding: 42px 20px 61px 20px
+    .footer__wrapper
+        padding: 26px
+    .form
+        &__headline::before
+            width: 120px
+        &__headline::after
+            width: 120px
+    .fio
+        &__name-1
+            width: 216px
+        &__name-2,
+        &__name-3
+            width: 178px
+    .impression
+        margin-left: 60px
+    .feedback__btn
+        padding: 18px 60px 13px 50px
+    .contacts
+        &__wrapper
+            display: flex
+            flex-direction: column
+            align-items: start
+        &__email
+            margin-left: 0
+        &__input
+            width: 100%
+        &__title
+            margin-bottom: 20px
+        &__number,
+        &__email
+            margin-bottom: 8px
+        &__input
+            margin-bottom: 25px
+    .photo
+        padding: 0 50px
+        margin-top: 60px
+        &__info
+            background: #F2F2F2
+        &__name
+            color: #000
+        &__author
+            color: #333
+        &__img
+            margin-bottom: 83px
+        &__descr
+            margin-bottom: 60px
+        .like__icon
+            fill: rgba(0, 0, 0, 0.3)
+        .likes__quantity
+            color: #000
+            font-weight: 700
+    .video
+        margin-bottom: 40px
+        &__item
+            width: 540px
+            height: 360px
+
+    
+@media ( max-width: 726px)
+    .form
+        &_impression
+            flex-direction: column
+        &__divider
+            display: none
+        &__headline::before
+            width: 0
+        &__headline::after
+            width: 0
+    .fio__header
+        margin-top: 0
+        margin-bottom: 20px
+        text-align: center
+    .impression
+        display: block
+        margin: 0 auto
+        &__wrapper
+            margin-left: 48px
+        &__header
+            left: 0
+    .feedback__btn
+        padding: 18px 40px 13px 40px
+    .contacts
+        margin-top: 45px
+    
+
+@media ( max-width: 576px)
+    .city,
+    .bridge
+        display: flex
+        flex-direction: column
+        &__descr
+            width: 100%
+            margin-top: -5px
+        &__img
+            width: 100%
+    .recommendations
+        margin-bottom: 26px
+        &__list
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+        &__item
+            display: flex
+            margin-bottom: 26px
+        &__text
+            width: 100%
+    .advantages
+        &__list
+            display: flex
+            flex-direction: column
+        &__item
+            width: 100%
+    .main-nav
+        height: 56px
+        &__list
+            position: fixed
+            top: 0
+            left: -100%
+            transform: translateX(-50%)
+            width: 100%
+            background-color: #81B3D2
+            z-index: 10
+            display: block
+            margin: 0 auto
+            transition: 0.5s all
+        &__list--active
+            left: 50%
+        &__item
+            width: 100%
+            height: 55px
+            background: #81B3D2
+            box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2)
+            padding: 0
+            display: flex
+            justify-content: center
+            align-items: center
+        &__link
+            color: #ffffff
+            padding: 20px 40px
+        &__item:nth-child(2)
+            padding-right: 0
+    .welcome
+        min-height: 500px
+        &__title
+            width: 85%
+            margin: auto
+    .hamburger
+        display: block
+        top: 17px
+        right: 20px
+    .promo
+        &__title
+            width: 285px
+            margin-bottom: 20px
+        &__text
+            width: 285px
+            margin: auto
+    .hotels
+        &__title
+            width: 260px
+            margin: auto
+        &__text
+            width: 260px
+            margin-top: 20px
+        &__btn
+            padding: 14px 32px 17px 32px
+    .footer__wrapper
+        flex-direction: column
+        height: 250px
+        justify-content: space-between
+    .form__title
+        width: 70%
+        margin-top: 260px
+    .attractions
+        &__wrapper 
+            margin: 0 auto
+            min-height: 400px
+            width: 280px
+        &__block
+            margin: 0
+        &__title
+            margin: 20px 0 40px 0
+    .feedback
+        margin-top: 36px
+        &__btn
+            width: 100%
+            padding: 18px 30px 13px 30px
+        &__text
+            margin: 0 auto
+            width: 306px
+        &__label
+            display: none
+        &__descr
+            width: 100%
+    .form
+        margin-top: 37px
+    .contacts
+        margin-top: 20px
+    .emotions__title
+        margin-top: 20px
+        margin-bottom: 15px
+    .photo
+        padding: 0
+        &__content
+            justify-content: center
+        &__img
+            width: 324px
+            height: 267px
+    .video__item
+        width: 400px
+        height: 250px
+
+@media ( max-width: 450px)
+    .photo
+        margin-top: 24px
+        &__descr
+            width: 300px
+            margin-bottom: 35px
+    .video
+        margin: 32px 0
+        &__descr
+            margin-bottom: 33px
+            width: 300px
+
+@media ( max-width: 400px)
+    .feedback__title,
+    .contacts__title,
+    .attractions__title,
+    .emotions__title
+        font-size: 18px
+    .form
+        padding: 20px
+        &__header
+            font-size: 18px
+            text-align: center
+    .form__title
+        margin-top: 280px
+    .photo
+        &__title
+            font-size: 18px
+    .video
+        &__title
+            font-size: 18px
+        &__item
+            width: 270px
+            height: 170px
+
+
+@media ( max-width: 320px)
+    .recommendations
+        &__item
+            position: relative
+            text-align: left
+        &__descr
+            width: 220px
+        &__icon
+            display: block
+            top: 15px
+            left: 0px
+            position: relative
+            width: 39px
+            height: 36px
+    .welcome
+        min-height: 398px
+        &__form
+            min-height: 450px
+    .form__title
+        margin-top: 260px
+    .photo
+        &__img
+            width: 290px
+            height: 220px
+            margin-bottom: 109px
+        &__info
+            padding: 11px 21px 15px 0
+            display: flex
+            flex-direction: column
+            align-items: start
+            background: #fff
+        &__text
+            margin-bottom: 10px
+        &__descr
+            width: 280px
+        &__item
+            border-bottom: 1px solid #E5E5E5
+            margin-bottom: 32px
+    .video
+        margin: 0
+        &__descr
+            width: 266px

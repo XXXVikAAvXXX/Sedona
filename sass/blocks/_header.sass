@@ -28,3 +28,30 @@ header
     left: 50%
     transform: translateX(-50%)
     z-index: 1
+.hamburger
+    display: none
+    top: 0
+    right: 0
+    position: absolute
+    background: 0
+    border: none
+    cursor: pointer
+    z-index: 20
+    span
+        margin-bottom: 5px
+        display: block
+        width: 23px
+        height: 4px
+        background: #81B3D2
+        transition: 0.5s all
+    &--active
+        span
+            background-color: #fff
+            margin-bottom: -5px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+                

@@ -14,7 +14,11 @@
         <div class="container">
             <nav class="main-nav">
                 <a class="main-logo" href="index.html">
-                    <img src="icons/logo.svg" alt="Логотип Sedona">
+                    <picture>
+                        <source srcset="icons/logotype-tablet.svg" media="(max-width:991px)">
+                        <source srcset="icons/logotype-tablet.svg" media="(max-width:768px)">
+                        <img src="icons/logo.svg" alt="Логотип Sedona">
+                    </picture>
                 </a>
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
@@ -30,6 +34,11 @@
                         <a href="https://htmlacademy.ru" class="main-nav__link">Html academy</a>
                     </li>
                 </ul>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
@@ -37,7 +46,7 @@
     <main>
         <section class="welcome welcome__form">
             <div class="container">
-                <img class="welcome__title form__title" src="img/text-sedona.svg" alt="Добро пожаловать в Седону!">
+                <img class="form__title" src="img/text-sedona.svg" alt="Добро пожаловать в Седону!">
             </div>
         </section>
 
@@ -48,21 +57,23 @@
                     <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
                 </div>
                 <form class="form" action="https://echo.htmlacademy.ru" method="post">
-                    <div class="form__wrapper">
+                    <div class="form__wrapper form_impression">
                         <div class="impression">
                             <h2 class="form__header impression__header">Ваше общее впечатление:</h2>
-                            <p>
-                                <input class="impression__radio" id="impression__input-1" name="impression__radio" type="radio" checked>
-                                <label class="impression__input" for="impression__input-1">Скорее положительное</label>
-                            </p>
-                            <p>
-                                <input class="impression__radio" id="impression__input-2" name="impression__radio" type="radio">
-                                <label class="impression__input" for="impression__input-2">Скорее отрицательное</label>
-                            </p>
-                            <p>
-                                <input class="impression__radio" id="impression__input-3" name="impression__radio" type="radio">
-                                <label class="impression__input" for="impression__input-3">Затрудняюсь ответить</label>
-                            </p>
+                            <div class="impression__wrapper">
+                                <p>
+                                    <input class="impression__radio" id="impression__input-1" name="impression__radio" type="radio" checked>
+                                    <label class="impression__input" for="impression__input-1">Скорее положительное</label>
+                                </p>
+                                <p>
+                                    <input class="impression__radio" id="impression__input-2" name="impression__radio" type="radio">
+                                    <label class="impression__input" for="impression__input-2">Скорее отрицательное</label>
+                                </p>
+                                <p>
+                                    <input class="impression__radio" id="impression__input-3" name="impression__radio" type="radio">
+                                    <label class="impression__input" for="impression__input-3">Затрудняюсь ответить</label>
+                                </p>
+                            </div>
                         </div>
 
                         <div class="form__divider"></div>
@@ -86,20 +97,20 @@
 
                     <div class="contacts">
                         <h2 class="contacts__title form__headline">Контактная информация:</h2>
-                        <div class="form__wrapper">
+                        <div class="form__wrapper contacts__wrapper">
+                            <label class="contacts__number" for="contacts__number">Телефон*:</label>
                             <p class="input__wrapper">
-                                <label class="contacts__number" for="contacts__number">Телефон*:</label>
                                 <input class="contacts__input" id="contacts__number" name="contacts__number" type="tel" placeholder="Введите телефон">
                                 <svg class="contacts__icon number__icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"/>
                                 </svg>
                             </p>
+                            <label class="contacts__email" for="contacts__email">Электронная почта*:</label>
                             <p class="input__wrapper">
-                                <label class="contacts__email" for="contacts__email">Электронная почта*:</label>
                                 <input class="contacts__input" id="contacts__email" name="contacts__email" type="email" placeholder="Введите e-mail">
                                 <svg class="contacts__icon email_icon" width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"/>
-                                </svg>                                        
+                                </svg>   
                             </p>
                         </div>
                     </div>
@@ -107,7 +118,7 @@
                     <div class="attractions">
                         <h2 class="attractions__title form__headline">Посещенные<br>достопримечательности:</h2>
                         <div class="attractions__wrapper">
-                            <p class="input__wrapper">
+                            <p class="input__wrapper attractions__block">
                                 <input class="attractions__input" id="bridge__checkbox" name="bridge__checkbox" type="checkbox">
                                 <label class="attractions__label" for="bridge__checkbox">
                                     <svg class="attractions__check--icon" width="24" height="17" viewBox="0 0 24 17" xmlns="http://www.w3.org/2000/svg">
@@ -116,7 +127,7 @@
                                     Мост Дьявола
                                 </label>
                             </p>
-                            <p class="input__wrapper">
+                            <p class="input__wrapper attractions__block">
                                 <input class="attractions__input" id="mountain__checkbox" name="mountain__checkbox" type="checkbox">
                                 <label class="attractions__label" for="mountain__checkbox">
                                     <svg class="attractions__check--icon" width="24" height="17" viewBox="0 0 24 17" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +136,7 @@
                                     Гора-Колокол
                                 </label>
                             </p>
-                            <p class="input__wrapper">
+                            <p class="input__wrapper attractions__block">
                                 <input class="attractions__input" id="park__checkbox" name="park__checkbox" type="checkbox">
                                 <label class="attractions__label" for="park__checkbox">
                                     <svg class="attractions__check--icon" width="24" height="17" viewBox="0 0 24 17" xmlns="http://www.w3.org/2000/svg">
@@ -134,7 +145,7 @@
                                     Слайд-парк
                                 </label>
                             </p>
-                            <p class="input__wrapper">
+                            <p class="input__wrapper attractions__block">
                                 <input class="attractions__input" id="rocks__checkbox" name="rocks__checkbox" type="checkbox">
                                 <label class="attractions__label" for="rocks__checkbox">
                                     <svg class="attractions__check--icon" width="24" height="17" viewBox="0 0 24 17" xmlns="http://www.w3.org/2000/svg">
